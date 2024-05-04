@@ -5,7 +5,6 @@
 body {
     margin: 0;
     background-color: #FBFBFB;
-    /* color: rgba(12, 12, 12, 0.7); */
 }
 
 p,
@@ -25,8 +24,6 @@ img {
 }
 
 button {
-    /* font-family: ;
-    color: ; */
     cursor: pointer;
     border: transparent;
 }
@@ -40,11 +37,6 @@ input::placeholder {
     color: #0c0c0c;
 }
 
-
-/* input::placeholder-shown {
-    border-color: #3350E9;
-} */
-
 textarea {
     resize: none;
 }
@@ -52,10 +44,6 @@ textarea {
 textarea::placeholder {
     color: #0c0c0c;
 }
-
-/* textarea::placeholder-shown {
-    border-color: #3350E9;
-} */
 
 .container {
     width: 375px;
@@ -82,9 +70,7 @@ textarea::placeholder {
 }
 
 .contacts-container {
-    display: block;
-    /* gap: 40px; */
-    /* max-width: 335px; */
+    display: block
 }
 
 .contacts-form {
@@ -116,9 +102,8 @@ textarea::placeholder {
     align-items: center;
     justify-content: center;
     flex-direction: row;
-    /* gap: 18px; */
 
-    border: 1px solid rgba(12, 12, 12, 0.15);
+    border: 1px solid #3350e9;
     border-radius: 12px;
     width: 279px;
     height: 42px;
@@ -128,14 +113,14 @@ textarea::placeholder {
     font-size: 16px;
     font-family: "Gilroy", sans-serif;
     padding: 12px 14px;
-    /* color: #0c0c0c; */
 
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    outline: transparent;
 }
 
-/* .contacts-form-input:focus-within {
-    border: 1px solid #3350e9;
-} */
+.contacts-form-input:placeholder-shown {
+    border-color: rgba(12, 12, 12, 0.15);
+}
 
 .contacts-form-textarea {
     display: flex;
@@ -144,7 +129,7 @@ textarea::placeholder {
     flex-direction: row;
     gap: 18px;
 
-    border: 1px solid rgba(12, 12, 12, 0.15);
+    border: 1px solid #3350e9;
     border-radius: 12px;
     width: 279px;
     height: 84px;
@@ -153,12 +138,12 @@ textarea::placeholder {
     background-color: transparent;
 
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    outline: transparent;
 }
 
-/* 
-.contacts-form-input:focus {
-    border-color: #3350E9;
-} */
+.contacts-form-textarea:placeholder-shown {
+    border-color: rgba(12, 12, 12, 0.15);
+}
 
 .contacts-btn {
     font-family: "Gilroy", sans-serif;
@@ -195,13 +180,22 @@ textarea::placeholder {
 
 }
 
+.contacts-picture {
+    flex-shrink: 0;
+}
+
 @media screen and (min-width: 768px) {
+    img {
+        border-radius: 50px;
+        width: 704px;
+        height: 556px;
+    }
     
     .container {
         width: 768px;
         padding-left: 32px;
         padding-right: 32px;
-        margin: 0;
+        margin: 0 auto;
     }
 
     .contacts-us-container {}
@@ -222,8 +216,6 @@ textarea::placeholder {
     .contacts-container {
         display: flex;
         flex-wrap: wrap;
-        /* gap: 40px; */
-        /* max-width: 580px; */
     }
 
     .container-form {
@@ -267,7 +259,7 @@ textarea::placeholder {
         flex-direction: row;
         gap: 18px;
 
-        border: 1px solid rgba(12, 12, 12, 0.15);
+        /* border: 1px solid rgba(12, 12, 12, 0.15); */
         border-radius: 12px;
         width: 460px;
         height: 52px;
@@ -311,7 +303,7 @@ textarea::placeholder {
         flex-direction: row;
         gap: 18px;
 
-        border: 1px solid rgba(12, 12, 12, 0.15);
+        /* border: 1px solid rgba(12, 12, 12, 0.15); */
         border-radius: 12px;
         width: 460px;
         height: 90px;
@@ -320,17 +312,21 @@ textarea::placeholder {
         background-color: transparent;
     }
 
-    .contacts-img {
-
+    .contacts-img {  
     }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1280px) {
+    img {
+        border-radius: 50px;
+        width: 530px;
+        height: 556px;
+    }
 
     .container {
-        width: 1180px;
-        padding-left: 15px;
-        padding-right: 15px;
+        width: 1280px;
+        padding-left: 65px;
+        padding-right: 65px;
         margin: 0 auto;
     }
 
@@ -354,11 +350,11 @@ textarea::placeholder {
     .contacts-container {
         display: flex;
         gap: 40px;
-        max-width: 580px;
     }
 
     .contacts-form {
         border-radius: 50px;
+        width: 580px;
 
         background: #f3f3f3;
 
@@ -386,7 +382,7 @@ textarea::placeholder {
         flex-direction: row;
         gap: 18px;
 
-        border: 1px solid rgba(12, 12, 12, 0.15);
+        /* border: 1px solid rgba(12, 12, 12, 0.15); */
         border-radius: 12px;
         width: 460px;
         height: 52px;
@@ -430,7 +426,7 @@ textarea::placeholder {
         flex-direction: row;
         gap: 18px;
 
-        border: 1px solid rgba(12, 12, 12, 0.15);
+        /* border: 1px solid rgba(12, 12, 12, 0.15); */
         border-radius: 12px;
         width: 460px;
         height: 90px;
